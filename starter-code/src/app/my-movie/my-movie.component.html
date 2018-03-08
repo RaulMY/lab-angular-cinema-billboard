@@ -1,0 +1,43 @@
+<div id="logo"><img src="https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png" alt="Dratini" />
+</div>
+<div id="mov">
+  <div id="title"><span class="room">Room {{myMovie.id}}  </span><span class="title">{{myMovie.title}}</span>
+  </div>
+  <img [src]="myMovie.poster">
+  <div class="info">
+      <div class="feature">
+    <b>Genres</b>
+    <ul>
+      <li *ngFor="let genre of myMovie.genres">
+        {{genre}}
+      </li>
+    </ul></div>
+    <div class="feature">
+    <b>Year </b>
+    <span>{{myMovie.year}}</span>
+  </div>
+    <div class="feature">
+    <b>Director </b>
+    <span>{{myMovie.director}}</span>
+  </div>
+    <div class="feature">
+    <b>Actors</b>
+      <ul>
+        <li *ngFor="let actor of myMovie.actors">
+          {{actor}}
+        </li>
+      </ul>
+    </div>
+      <div class="feature">
+      <b>Schedule</b>
+      <ul>
+          <li *ngFor="let hour of myMovie.hours">
+            {{hour}}
+          </li>
+        </ul>
+      </div>
+      <b>Synopsis</b>
+      <p>{{myMovie.synopsis}}</p>
+  </div>
+</div>
+<button [routerLink] = "['/home']" >Home</button>

@@ -1,0 +1,9 @@
+<div id="logo"><img src="https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png" alt="Dratini" />
+</div>
+<div class="movies">
+  <div class="movie-container" *ngFor="let movie of movieArray">
+    <h2>Room {{movie.room}}</h2>
+    <img [src]="movie.poster">
+    <a [routerLink]="['../movie', movie.id]"><p>{{movie.title}}</p></a>
+  </div>
+</div>

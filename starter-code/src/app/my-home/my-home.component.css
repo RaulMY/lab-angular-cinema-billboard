@@ -1,0 +1,18 @@
+#logo{
+    margin: 0 auto;
+    width: 25%;
+}
+
+.movies{
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie-container{
+    width: 15%;
+    text-align: center;
+}
+
+.movie-container img{
+    width: 100%;
+}
